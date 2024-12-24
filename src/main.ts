@@ -33,3 +33,35 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
+
+const images: NodeListOf<HTMLImageElement> = document.querySelectorAll('.skills-icons img');
+const title: HTMLElement | null = document.querySelector('.skills-title');
+
+
+const observerCallback: IntersectionObserverCallback = (entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+     
+      entry.target.classList.add('visible');
+      entry.target.classList.remove('hidden'); 
+    } else {
+      
+      entry.target.classList.add('hidden');
+      entry.target.classList.remove('visible'); 
+    }
+  });
+};
+
+
+const observerOptions: IntersectionObserverInit = {
+  threshold: 0.2 
+};
+
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+
+if (title) {
+  observer.observe(title);
+}
+images.forEach(image => observer.observe(image));
