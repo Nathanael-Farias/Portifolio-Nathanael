@@ -34,14 +34,14 @@ body::before {
     rgb(150, 0, 137) 100%
   );
   background: linear-gradient(
-    90deg, /* Gradiente horizontal */
-    rgb(129, 1, 65) 9%, 
-  
+    90deg,
+    rgb(129, 1, 65) 9%,
+
     rgb(150, 0, 137) 100%
-);
+  );
 
   z-index: -1;
-  min-height: 500vh;
+  min-height: 600vh;
 }
 
 nav {
@@ -87,7 +87,7 @@ nav a:hover {
   width: 1600px;
   height: 600px;
   border-radius: 47px;
-  
+
   background-size: cover;
   background-position: center;
   overflow: hidden;
@@ -138,7 +138,6 @@ nav a:hover {
 }
 
 .text-body-p {
-  
   border-radius: 20px;
   padding: 20px;
   font-size: 22px;
@@ -240,19 +239,19 @@ footer {
   margin-top: 0;
   text-align: center;
   font-size: 44px;
-  opacity: 0; 
-  transform: translateY(20px); 
-  transition: opacity 1s ease, transform 1s ease; 
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .skills-title.visible {
-  opacity: 1; 
-  transform: translateY(0); 
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .skills-title.hidden {
-  opacity: 0; 
-  transform: translateY(20px); 
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .skills-icons {
@@ -267,20 +266,19 @@ footer {
   width: 100px;
   height: 100px;
   object-fit: contain;
-  opacity: 0; 
-  transform: translateY(20px); 
-  transition: opacity 1s ease, transform 1s ease; 
-  
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
 }
 
 .skills-icons img.visible {
-  opacity: 1; 
-  transform: translateY(0); 
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .skills-icons img.hidden {
-  opacity: 0; 
-  transform: translateY(20px); 
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .skills-icons img:hover {
@@ -293,7 +291,6 @@ footer {
   align-items: center;
   flex-basis: calc(33.333% - 10px);
   box-sizing: border-box;
-  
 }
 
 .skills {
@@ -301,6 +298,169 @@ footer {
   margin-left: calc(50% - 35%);
   padding: 40px 20px;
   color: white;
-  box-shadow: 0px 15px 40px -15px rgba(145, 0, 84, 0.3); 
+  box-shadow: 0px 15px 40px -15px rgba(145, 0, 84, 0.3);
   border-radius: 200px;
+}
+.project-card {
+  width: 457px;
+  height: 685px;
+  border-radius: 36px;
+  background: linear-gradient(
+    180deg,
+    rgb(121, 0, 113) 46%,
+    rgba(172, 0, 120, 0.88) 62.5%
+  );
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  object-fit: contain;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.project-title {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.project-image {
+  width: 429px;
+  height: 216px;
+  border-radius: 12px;
+  object-fit: contain;
+  -webkit-box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 21px -7px rgba(0, 0, 0, 0.75);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icons img {
+  width: 45px;
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 32;
+  transform: translateY(15px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+.icons img:hover {
+  transform: scale(1.1) translateY(10px);
+}
+
+.project-description {
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: bold;
+  margin-top: 20px;
+  -webkit-box-shadow: 4px -22px 13px -15px rgba(255, 255, 255, 0.35);
+  -moz-box-shadow: 4px -22px 13px -15px rgba(255, 255, 255, 0.35);
+  box-shadow: 4px -22px 13px -15px rgba(255, 255, 255, 0.35);
+}
+
+.project-button {
+  padding: 14px 28px;
+  background-color: #9b4dca;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  animation: float 6s ease-in-out infinite;
+}
+
+.project-button:hover {
+  background-color: #7a28a3;
+  transform: scale(1.05);
+}
+
+.project-button:focus {
+  outline: none;
+  box-shadow: 0 0 12px 4px rgba(155, 77, 202, 0.8);
+}
+
+.project-button:active {
+  transform: scale(1);
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 300px;
+}
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  margin-bottom: -240px;
+}
+
+.title-projectc-card {
+  font-size: 44px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.title-projectc-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title-projectc-card.hidden {
+  opacity: 0;
+  transform: translateY(20px);
 }
