@@ -36,10 +36,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 const images: NodeListOf<HTMLImageElement> = document.querySelectorAll('.skills-icons img');
-const titleSkills: HTMLElement | null = document.querySelector('.skills-title'); 
-const titleProject: HTMLElement | null = document.querySelector('.title-projectc-card'); 
+const titleSkills: HTMLElement | null = document.querySelector('.skills-title');
+const titleProject: HTMLElement | null = document.querySelector('.title-projectc-card');
 const projectCards: NodeListOf<HTMLElement> = document.querySelectorAll('.project-card');
-
+const studiesDiv: HTMLElement | null = document.querySelector('.studies-div');
+const contactsDiv: HTMLElement | null = document.querySelector('.contacts-div');  // Novo elemento de contatos
 
 const observerCallback: IntersectionObserverCallback = (entries, observer) => {
   entries.forEach(entry => {
@@ -59,6 +60,9 @@ const observerOptions: IntersectionObserverInit = {
 
 const observer = new IntersectionObserver(observerCallback, observerOptions);
 
+if (studiesDiv) {
+  observer.observe(studiesDiv);
+}
 
 if (titleSkills) {
   observer.observe(titleSkills);
@@ -70,3 +74,8 @@ if (titleProject) {
 
 images.forEach(image => observer.observe(image));
 projectCards.forEach(projectCard => observer.observe(projectCard));
+
+
+if (contactsDiv) {
+  observer.observe(contactsDiv);
+}
