@@ -1182,6 +1182,7 @@ nav a:hover {
   border-radius: 8px;
   margin-bottom: 20px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow-wrap: break-word;
 }
 
 .contact-item:hover {
