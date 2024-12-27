@@ -82,3 +82,50 @@ projectCards.forEach((projectCard) => observer.observe(projectCard));
 if (contactsDiv) {
   observer.observe(contactsDiv);
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.nav-button');
+
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const targetSectionId = (button as HTMLElement).getAttribute(
+        'data-target'
+      );
+      const targetSection = document.getElementById(targetSectionId!);
+
+      if (targetSection) {
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start',
+        });
+      }
+    });
+  });
+});
+
+const hamburger = document.querySelector('.hamburger') as HTMLElement;
+const navButtons = document.querySelector('.nav-buttons') as HTMLElement;
+const body = document.querySelector('body') as HTMLElement;
+
+const toggleMenu = () => {
+  navButtons.classList.toggle('open');
+  hamburger.classList.toggle('open');
+};
+
+hamburger.addEventListener('click', (event: MouseEvent) => {
+  event.stopPropagation();
+  toggleMenu();
+});
+
+const closeMenuOnClickOutside = (event: MouseEvent) => {
+  if (
+    !navButtons.contains(event.target as Node) &&
+    !hamburger.contains(event.target as Node)
+  ) {
+    if (navButtons.classList.contains('open')) {
+      toggleMenu();
+    }
+  }
+};
+
+body.addEventListener('click', closeMenuOnClickOutside);
