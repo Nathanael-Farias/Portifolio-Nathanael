@@ -44,8 +44,7 @@ const titleProject: HTMLElement | null = document.querySelector(
 const projectCards: NodeListOf<HTMLElement> =
   document.querySelectorAll('.project-card');
 const studiesDiv: HTMLElement | null = document.querySelector('.studies-div');
-const contactsDiv: HTMLElement | null = document.querySelector('.contacts-div'); // Novo elemento de contatos
-
+const contactsDiv: HTMLElement | null = document.querySelector('.contacts-div');
 const observerCallback: IntersectionObserverCallback = (entries, observer) => {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
@@ -83,6 +82,7 @@ if (contactsDiv) {
   observer.observe(contactsDiv);
 }
 
+// Smooth scroll to sections on button click.
 document.addEventListener('DOMContentLoaded', () => {
   const buttons = document.querySelectorAll('.nav-button');
 
@@ -103,6 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+// Toggle hamburger menu and close it when clicking outside.
 const hamburger = document.querySelector('.hamburger') as HTMLElement;
 const navButtons = document.querySelector('.nav-buttons') as HTMLElement;
 const body = document.querySelector('body') as HTMLElement;
