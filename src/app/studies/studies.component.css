@@ -24,19 +24,17 @@
   font-weight: bold;
   margin-top: 80px;
 }
+
 .studies-resume-div {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin: 100px 15%;
   color: #fff;
   font-family: Arial, sans-serif;
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
-  margin-bottom: 25px;
   font-weight: bold;
-  margin-top: 100px;
-
-  border-radius: 5;
+  margin-bottom: 25px;
+  border-radius: 5px;
 }
 
 .study-item {
@@ -47,6 +45,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .certificate-div {
   display: flex;
   justify-content: center;
@@ -74,7 +73,6 @@
 }
 
 .certificate-button:hover {
-  transition: 600ms;
   background: linear-gradient(90deg, #ff66b2 0%, #ff007f 100%);
   box-shadow: 0px 6px 20px rgba(54, 0, 85, 0.6);
   transform: translateY(-5px);
