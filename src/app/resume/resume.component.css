@@ -222,18 +222,6 @@ nav a:hover {
   }
 }
 
-.profile-photo {
-  width: 100%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 20%;
-  margin-left: 20px;
-  object-fit: cover;
-  box-shadow: 0px 10px 30px rgba(76, 0, 99, 0.2);
-  transition: transform 1s ease-in-out, box-shadow 0.3s ease;
-  animation: slideInFromRight 1s ease-out forwards;
-}
-
 @media (max-width: 1600px) {
   .profile-photo {
     display: none;
