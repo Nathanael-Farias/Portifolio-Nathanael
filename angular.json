@@ -25,13 +25,7 @@
               }
             ],
             "styles": [
-              "src/Css/styles.css",
-              "src/Css/resume.css",
-              "src/Css/navigation.css",
-              "src/Css/skills.css",
-              "src/Css/project.css",
-              "src/Css/studies.css",
-              "src/Css/contact.css"
+              "src/Css/styles.css"
             ],
             "scripts": []
           },
@@ -86,13 +80,7 @@
               }
             ],
             "styles": [
-              "src/Css/styles.css",
-              "src/Css/resume.css",
-              "src/Css/navigation.css",
-              "src/Css/skills.css",
-              "src/Css/project.css",
-              "src/Css/studies.css",
-              "src/Css/contact.css"
+              "src/Css/styles.css" 
             ],
             "scripts": []
           }
