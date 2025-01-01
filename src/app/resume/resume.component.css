@@ -36,12 +36,11 @@ nav a:hover {
   align-items: center;
   justify-content: center;
   position: relative;
-  
   left: 50%;
   transform: translate(-50%, -50%);
   max-width: 1600px;
   width: 90%;
-  height: 600px;
+  height: 400px;
   border-radius: 47px;
   background-size: cover;
   background-position: center;
@@ -62,17 +61,6 @@ nav a:hover {
   animation: slideInFromRight 1s ease-out forwards;
 }
 
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 .profile-photo:hover {
   transform: scale(1.05);
 }
@@ -81,20 +69,19 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  
+
   padding: 5px 10px;
   color: white;
   opacity: 0;
   animation: fadeInText 1s 0.5s ease-out forwards;
   width: 100%;
   margin-right: 20px;
-  
 }
 
 .text-body-p {
   border-radius: 20px;
   padding: 0;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.6;
   margin: 5px 0;
   font-weight: bold;
@@ -103,14 +90,12 @@ nav a:hover {
   white-space: pre-wrap;
   word-wrap: break-word;
   text-align: center;
- 
 }
 
 .title-body-h1 {
   text-align: center;
-  font-size: 36px;
+  font-size: 40px;
   margin-bottom: 100px;
-  
 }
 
 @keyframes fadeIn {
@@ -140,16 +125,7 @@ nav a:hover {
   }
 }
 
-@keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
+
 
 @keyframes zoomIn {
   0% {
