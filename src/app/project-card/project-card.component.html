@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<div class="project-card">
+  <div class="project-title">{{ title }}</div>
+  <img class="project-image" [src]="imageUrl" [alt]="title" />
+  <div class="icons">
+    <img *ngFor="let icon of icons" [src]="icon" [alt]="title" />
+  </div>
+  <div class="project-description">{{ projectDescription }}</div>
+  <a [href]="projectLink" class="project-button">Saiba mais</a>
+</div>
