@@ -1,0 +1,241 @@
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a img {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  object-fit: contain;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  transform: translateY(-5px);
+  color: #ff50ff;
+}
+
+.div-center-resume {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1600px;
+  width: 1600px;
+  height: 600px;
+  border-radius: 47px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  animation: fadeIn 1s ease-out;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20%;
+  margin-left: 20px;
+  object-fit: cover;
+  box-shadow: 0px 10px 30px rgba(76, 0, 99, 0.2);
+  transition: transform 1s ease-in-out, box-shadow 0.3s ease;
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.profile-photo:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .profile-photo {
+    max-width: 200px;
+    margin-left: 0;
+    margin-top: auto;
+    margin-bottom: -200px;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 8%;
+  padding: 5px 10px;
+  color: white;
+  opacity: 0;
+  animation: fadeInText 1s 0.5s ease-out forwards;
+  width: 100%;
+}
+
+.text-body-p {
+  border-radius: 20px;
+  padding: 0;
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 5px 0;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeInText 1s 1s ease-out forwards;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  height: 420px;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.title-body-h1 {
+  text-align: center;
+  font-size: 44px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLetter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeInLetter 0.1s forwards;
+}
+
+@media (max-width: 768px) {
+  nav a {
+    font-size: 16px;
+  }
+
+  .div-center-resume {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .profile-photo {
+    display: none;
+  }
+
+  .text-container {
+    width: 90%;
+    padding: 0 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    text-align: justify;
+    line-height: 1.8;
+  }
+
+  .title-body-h1 {
+    font-size: 32px;
+    margin-left: 10px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    text-align: center;
+  }
+
+  .text-body-p {
+    hyphens: auto;
+    word-wrap: break-word;
+    word-break: break-word;
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: bold;
+    animation: fadeInText 1s 1s ease-out forwards;
+    margin-top: 50px;
+    text-align: justify;
+    white-space: normal;
+    width: 100%;
+  }
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20%;
+  margin-left: 20px;
+  object-fit: cover;
+  box-shadow: 0px 10px 30px rgba(76, 0, 99, 0.2);
+  transition: transform 1s ease-in-out, box-shadow 0.3s ease;
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+@media (max-width: 1600px) {
+  .profile-photo {
+    display: none;
+  }
+}
