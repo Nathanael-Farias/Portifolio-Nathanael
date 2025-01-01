@@ -8,15 +8,14 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-size: cover;
-  background-position: center;
   background: linear-gradient(90deg, rgb(0, 0, 0) 9%, rgb(68, 0, 62) 100%);
   min-height: max-content;
   animation: fadeIn 2s ease-in-out;
+  background-size: cover;
+  background-position: center;
 }
+
 .body {
-  -webkit-box-shadow: inset -2px 1px 100px 36px rgba(84, 0, 105, 0.29);
-  -moz-box-shadow: inset -2px 1px 100px 36px rgba(218, 115, 245, 0.29);
   box-shadow: inset -2px 1px 100px 36px rgba(218, 115, 245, 0.29);
 }
 
@@ -31,31 +30,12 @@ body::before {
   z-index: -1;
   min-height: max-content;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
   }
   100% {
     opacity: 1;
-  }
-}
-@media (max-width: 480px) {
-  body {
-    background-size: cover;
-    background-position: center center;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    background-size: cover;
-    background-position: center center;
-  }
-}
-
-@media (min-width: 769px) {
-  body {
-    background-size: cover;
-    background-position: center center;
   }
 }
