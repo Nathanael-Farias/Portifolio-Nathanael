@@ -1,0 +1,107 @@
+.studies-div {
+  opacity: 0;
+  margin-top: 300px;
+  transform: translateY(20px);
+  transition: opacity 1s ease, transform 1s ease;
+  margin-bottom: 300px;
+}
+
+.studies-div.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.studies-div.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.studies-title {
+  font-size: 44px;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  margin-top: 80px;
+}
+.studies-resume-div {
+  margin-left: 15%;
+  margin-right: 15%;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: left;
+  margin-bottom: 25px;
+  font-weight: bold;
+  margin-top: 100px;
+
+  border-radius: 5;
+}
+
+.study-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.certificate-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.certificate-button {
+  padding: 10px 20px;
+  background: linear-gradient(90deg, rgb(61, 0, 77) 9%, rgb(68, 0, 62) 100%);
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0px 4px 15px rgba(117, 0, 59, 0.3);
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.certificate-button:hover {
+  transition: 600ms;
+  background: linear-gradient(90deg, #ff66b2 0%, #ff007f 100%);
+  box-shadow: 0px 6px 20px rgba(54, 0, 85, 0.6);
+  transform: translateY(-5px);
+}
+
+.certificate-button:active {
+  background: linear-gradient(90deg, #ff007f 0%, #ff66b2 100%);
+  box-shadow: 0px 2px 10px rgba(70, 0, 110, 0.4);
+  transform: translateY(2px);
+}
+
+.certificate-button:focus {
+  outline: none;
+  animation: focusEffect 1s ease-out;
+}
+
+@keyframes focusEffect {
+  0% {
+    transform: scale(1);
+    box-shadow: 0px 2px 10px rgba(255, 0, 127, 0.4);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0px 2px 10px rgba(255, 0, 127, 0.4);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0px 2px 10px rgba(255, 0, 127, 0.4);
+  }
+}
