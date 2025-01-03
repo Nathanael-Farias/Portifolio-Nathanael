@@ -9,6 +9,7 @@ import { ProjectsResumeComponent } from '../projects-resume/projects-resume.comp
 import { StudiesComponent } from '../studies/studies.component';
 import { FooterComponent } from '../footer/footer.component';
 import { ProjectCardComponent } from '../project-card/project-card.component';
+import { ModalCertificateComponent } from '../modal-certificate/modal-certificate.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProjectCardComponent } from '../project-card/project-card.component';
     StudiesComponent,
     ProjectCardComponent,
     FooterComponent,
+    ModalCertificateComponent,
   ],
   imports: [BrowserModule],
   providers: [],
