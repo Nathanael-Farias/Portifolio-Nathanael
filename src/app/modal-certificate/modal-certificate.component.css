@@ -4,16 +4,30 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: rgba(119, 25, 111, 0.068);
+  background: rgb(44, 0, 73);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 2000;
 }
+@keyframes backdropFadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .modal-backdrop.fade-out {
+    animation: backdropFadeOut 0.5s forwards; 
+  }
+  
 
 .modal {
   background: linear-gradient(90deg, rgb(39, 0, 39) 9%, rgb(68, 0, 62) 100%);
   padding: 20px;
+
   z-index: 2000;
   width: 93%;
   max-width: 2000px;
@@ -64,7 +78,6 @@
   transform: translateX(-50%);
   margin: 0;
   
-
 }
 
 .close-btn {
@@ -80,24 +93,36 @@
 }
 
 @keyframes modalFadeOut {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    25% {
+      opacity: 0.9;
+      transform: translateY(-5px);
+    }
+    50% {
+      opacity: 0.6;
+      transform: translateY(-15px);
+    }
+    75% {
+      opacity: 0.3;
+      transform: translateY(-25px);
+    }
+    90% {
+      opacity: 0.1;
+      transform: translateY(-35px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-40px);
+    }
   }
-  80% {
-    opacity: 0.4;
-    transform: translateY(-20px);
+  
+  .modal.fade-out {
+    animation: modalFadeOut 0.2s;
   }
-  100% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-}
-
-.modal.fade-out {
-  animation: modalFadeOut 0.5s ease-in-out forwards;
-}
-
+  
 .button-open {
   display: flex;
   margin: 20px auto;
@@ -117,7 +142,7 @@
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
   margin-bottom: 400px;
-  opacity: 0;
+  opacity: 1;
 }
 .hidden {
   opacity: 0;
