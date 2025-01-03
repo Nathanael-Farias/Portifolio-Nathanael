@@ -6,5 +6,12 @@
     <img *ngFor="let icon of icons" [src]="icon" [alt]="title" />
   </div>
   <div class="project-description">{{ projectDescription }}</div>
-  <a [href]="projectLink" class="project-button">Saiba mais</a>
+
+  <a [href]="githubLink" target="_blank">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+      alt="GitHub"
+      class="github-icon"
+    />
+  </a>
 </div>
