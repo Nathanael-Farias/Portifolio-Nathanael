@@ -23,6 +23,6 @@ export class ModalCertificateComponent {
     setTimeout(() => {
       this.isVisible = false;
       this.isFadingOut = false;
-    }, 500);
+    }, 1000);
   }
 }
