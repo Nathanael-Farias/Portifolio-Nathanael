@@ -25,6 +25,9 @@ export class SkillsComponent implements AfterViewInit {
     const projectsButton: HTMLElement | null =
       document.querySelector('.projects-button');
 
+    const openButton: HTMLElement | null =
+      document.querySelector('.button-open');
+
     const observerCallback: IntersectionObserverCallback = (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -67,6 +70,10 @@ export class SkillsComponent implements AfterViewInit {
 
     if (projectsButton) {
       observer.observe(projectsButton);
+    }
+
+    if (openButton) {
+      observer.observe(openButton);
     }
   }
 }
