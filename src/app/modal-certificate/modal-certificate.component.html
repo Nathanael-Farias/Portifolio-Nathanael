@@ -1,10 +1,47 @@
 <div class="modal-backdrop" *ngIf="isVisible" (click)="closeModal()">
-  <div class="modal" (click)="$event.stopPropagation()">
+  <div
+    class="modal"
+    [class.fade-out]="isFadingOut"
+    (click)="$event.stopPropagation()"
+  >
+    <h1 class="modal-title">Certificados</h1>
     <button class="close-btn" (click)="closeModal()">X</button>
-    <ng-container *ngTemplateOutlet="dynamicTemplate"></ng-container>
+    <ng-container *ngTemplateOutlet="dynamicTemplate"> </ng-container>
   </div>
 </div>
 
 <button class="button-open" (click)="openModal()">CERTIFICADOS</button>
 
-<ng-template #certificateCardTemplate> oiiiii </ng-template>
+<ng-template #certificateCardTemplate>
+  <div class="certificate-container">
+    <app-certificate-card
+      [title]="'Formação .NET Developer'"
+      [imageUrl]="'https://i.postimg.cc/KcTPbnsz/0JSLCA03.png'"
+      [certificateLink]="'https://www.dio.me/certificate/0JSLCA03/share'"
+    ></app-certificate-card>
+
+    <app-certificate-card
+      [title]="'Formação JavaScript Developer'"
+      [imageUrl]="'https://i.postimg.cc/G2Brs3sL/2ICRYQFB.png'"
+      [certificateLink]="'https://www.dio.me/certificate/2ICRYQFB/share'"
+    ></app-certificate-card>
+
+    <app-certificate-card
+      [title]="'Foundational C# with Microsoft'"
+      [imageUrl]="
+        'https://i.postimg.cc/15rBwGSt/dasfsdafdsafsadfsadfdsafsad.png'
+      "
+      [certificateLink]="
+        'https://www.freecodecamp.org/certification/NathanaelFarias/foundational-c-sharp-with-microsoft'
+      "
+    ></app-certificate-card>
+
+    <app-certificate-card
+      [title]="'Formação Angular Developer'"
+      [imageUrl]="
+        'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjt-ewgNomB7qqJH9Hn5VxQsnOgH_rRb2u9Q&s'
+      "
+      [certificateLink]="''"
+    ></app-certificate-card>
+  </div>
+</ng-template>
