@@ -8,15 +8,21 @@ import { Component, TemplateRef, ViewChild } from '@angular/core';
 })
 export class ModalCertificateComponent {
   isVisible = false;
+  isFadingOut = false;
 
   @ViewChild('certificateCardTemplate', { static: true })
   dynamicTemplate!: TemplateRef<any>;
 
   openModal() {
     this.isVisible = true;
+    this.isFadingOut = false;
   }
 
   closeModal() {
-    this.isVisible = false;
+    this.isFadingOut = true;
+    setTimeout(() => {
+      this.isVisible = false;
+      this.isFadingOut = false;
+    }, 500);
   }
 }
