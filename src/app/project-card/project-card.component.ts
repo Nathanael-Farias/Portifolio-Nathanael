@@ -12,4 +12,5 @@ export class ProjectCardComponent {
   @Input() projectDescription: string = '';
   @Input() projectLink: string = '#';
   @Input() icons: string[] = [];
+  @Input() githubLink: string = '';
 }
