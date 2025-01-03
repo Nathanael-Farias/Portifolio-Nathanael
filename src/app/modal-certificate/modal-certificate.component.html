@@ -1,0 +1,10 @@
+<div class="modal-backdrop" *ngIf="isVisible" (click)="closeModal()">
+  <div class="modal" (click)="$event.stopPropagation()">
+    <button class="close-btn" (click)="closeModal()">X</button>
+    <ng-container *ngTemplateOutlet="dynamicTemplate"></ng-container>
+  </div>
+</div>
+
+<button class="button-open" (click)="openModal()">CERTIFICADOS</button>
+
+<ng-template #certificateCardTemplate> oiiiii </ng-template>
