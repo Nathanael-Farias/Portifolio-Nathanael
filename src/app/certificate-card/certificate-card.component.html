@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<div class="certificate-container">
+  <div class="certificate-card">
+    <div class="certificate-title">{{ title }}</div>
+    <div class="overlay" id="imageOverlay">
+      <img
+        class="certificate-image"
+        [src]="imageUrl"
+        [alt]="title"
+        *ngIf="imageUrl"
+      />
+    </div>
+    <a
+      *ngIf="certificateLink"
+      [href]="certificateLink"
+      class="certificate-button"
+      target="_blank"
+      >Link Do Certificado</a
+    >
+  </div>
+</div>
