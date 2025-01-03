@@ -61,10 +61,6 @@ nav a:hover {
   animation: slideInFromRight 1s ease-out forwards;
 }
 
-.profile-photo:hover {
-  transform: scale(1.05);
-}
-
 .text-container {
   display: flex;
   flex-direction: column;
@@ -124,8 +120,6 @@ nav a:hover {
     opacity: 1;
   }
 }
-
-
 
 @keyframes zoomIn {
   0% {
