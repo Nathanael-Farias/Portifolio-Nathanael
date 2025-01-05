@@ -15,35 +15,21 @@
 <ng-template #projectCardTemplate>
   <div class="projects-container">
     <app-project-card
-      title="E-Comerce"
-      imageUrl="https://raw.githubusercontent.com/Nathanael-Farias/ContactManager/refs/heads/main/Screenshots/Screenshot-4.png"
-      projectDescription="Atualmente, estou desenvolvendo uma aplicação de E-Commerce utilizando Angular, TypeScript, HTML e CSS para criar uma interface dinâmica. O sistema está em constante evolução."
-      projectLink="#"
-      [icons]="[
-        'https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png',
-        'https://img.icons8.com/fluent/512/angularjs.png',
-        'https://static-00.iconduck.com/assets.00/typescript-icon-icon-2048x2048-2rhh1z66.png',
-        'https://cdn-icons-png.flaticon.com/512/919/919827.png',
-        'https://cdn-icons-png.flaticon.com/512/919/919826.png',
-        'https://i.pinimg.com/originals/00/47/41/004741d0cd8e7face0e44392387ac18c.png'
-      ]"
-    ></app-project-card>
-    <app-project-card
-      title="Gerenciador de Contatos"
-      imageUrl="https://github.com/Nathanael-Farias/ContactManager/raw/main/Screenshots/Screenshot-2.png"
-      projectDescription="O Contact Manager é um projeto .NET Core que oferece autenticação e gerenciamento de usuários e contatos. Com arquitetura MVC, ele permite login, recuperação de senha e gerenciamento de dados com segurança (hashing de senhas) e envio de e-mails. Utiliza Entity Framework Core para interação com SQL Server e Bootstrap para uma interface responsiva."
-      projectLink="#"
-      [icons]="[
-        'https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png',
-        'https://img.icons8.com/color/512/javascript.png',
-        'https://cdn-icons-png.flaticon.com/512/919/919827.png',
-        'https://cdn-icons-png.flaticon.com/512/919/919826.png',
-        'https://i.pinimg.com/originals/00/47/41/004741d0cd8e7face0e44392387ac18c.png'
-      ]"
+    title="Gerenciador de Contatos"
+    imageUrl="https://github.com/Nathanael-Farias/ContactManager/raw/main/Screenshots/Screenshot-2.png"
+    projectDescription="O Contact Manager é um projeto .NET Core que oferece autenticação e gerenciamento de usuários e contatos. Com arquitetura MVC, ele permite login, recuperação de senha e gerenciamento de dados com segurança (hashing de senhas) e envio de e-mails. Utiliza Entity Framework Core para interação com SQL Server e Bootstrap para uma interface responsiva."
+    projectLink="#"
+    [icons]="[
+      'https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png',
+      'https://img.icons8.com/color/512/javascript.png',
+      'https://cdn-icons-png.flaticon.com/512/919/919827.png',
+      'https://cdn-icons-png.flaticon.com/512/919/919826.png',
+      'https://i.pinimg.com/originals/00/47/41/004741d0cd8e7face0e44392387ac18c.png'
+    ]"
       [githubLink]="'https://github.com/Nathanael-Farias/ContactManager'"
-    ></app-project-card>
-
-    <app-project-card
+      ></app-project-card>
+      
+      <app-project-card
       title="Portifólio"
       imageUrl="https://i.postimg.cc/ZnGNR7S4/imagem-2024-12-29-134815766.png"
       projectDescription="Este é o meu portfólio pessoal, desenvolvido com Angular, TypeScript e CSS. Ele foi criado para destacar minhas habilidades, experiências, certificações e projetos de forma interativa e modular. O objetivo é apresentar uma visão clara do meu trabalho e das tecnologias que utilizo."
@@ -55,7 +41,24 @@
         'https://cdn-icons-png.flaticon.com/512/919/919826.png'
       ]"
       [githubLink]="'https://github.com/Nathanael-Farias/Portifolio-Nathanael'"
-    ></app-project-card>
-    
-  </div>
-</ng-template>
+      ></app-project-card>
+      <app-project-card
+        title="E-Comerce"
+        imageUrl="https://i0.wp.com/espaferro.com.br/wp-content/uploads/2024/06/placeholder.png?ssl=1"
+        projectDescription="Atualmente, estou desenvolvendo uma aplicação de E-Commerce utilizando Angular, TypeScript, HTML e CSS para criar uma interface dinâmica."
+        projectLink="#"
+        [icons]="[
+          'https://static-00.iconduck.com/assets.00/c-sharp-c-icon-1822x2048-wuf3ijab.png',
+          'https://img.icons8.com/fluent/512/angularjs.png',
+          'https://static-00.iconduck.com/assets.00/typescript-icon-icon-2048x2048-2rhh1z66.png',
+          'https://cdn-icons-png.flaticon.com/512/919/919827.png',
+          'https://cdn-icons-png.flaticon.com/512/919/919826.png',
+          'https://i.pinimg.com/originals/00/47/41/004741d0cd8e7face0e44392387ac18c.png'
+        ]"
+        [githubLink]="'https://github.com/Nathanael-Farias/E-Comerce'"
+        
+      ></app-project-card>
+      
+    </div>
+  </ng-template>
+  

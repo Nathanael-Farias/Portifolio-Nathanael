@@ -2,11 +2,7 @@
   width: 510px;
   height: 410px;
   border-radius: 16px;
-  background: linear-gradient(
-    180deg,
-    rgb(121, 0, 113) 46%,
-    rgba(172, 0, 120, 0.88) 62.5%
-  );
+  background: linear-gradient(180deg, rgb(121, 0, 113) 46%, rgba(172, 0, 120, 0.88) 62.5%);
   box-shadow: 0px 0px 22px -4px rgba(234, 0, 255, 1);
   padding: 20px;
   display: flex;
@@ -18,13 +14,11 @@
   transform: translateY(20px);
   position: relative;
   z-index: 3000;
-  margin: 2px;
+  margin: 2px 20px 20px 20px;
   margin-top: 60px;
-  margin-bottom: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
   transition: transform 0.8s ease, box-shadow 0.4s ease;
   transform-origin: center center;
+  
 }
 
 .certificate-card:hover {
@@ -37,7 +31,6 @@
   font-weight: bold;
   text-align: center;
   color: #fff;
-  
 }
 
 .certificate-image {
@@ -66,20 +59,20 @@
   text-transform: uppercase;
   animation: float 6s ease-in-out infinite;
   z-index: 1;
-  
 }
 
 @media (max-width: 768px) {
   .certificate-card {
-    width: 100%;
+    width: 90%;
     height: auto;
-    border-radius: 20px;
+    border-radius: 18px;
     padding: 15px;
     margin: 0 auto;
+    margin-top: 40px;
   }
 
   .certificate-title {
-    font-size: 18px;
+    font-size: 1.2em; 
     margin-left: 10px;
   }
 
@@ -89,19 +82,9 @@
     border-radius: 8px;
   }
 
-  .icons {
-    gap: 8px;
-    margin-bottom: 15px;
-  }
-
-  .icons img {
-    width: 35px;
-    height: 35px;
-  }
-
   .certificate-button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 24px;
+    font-size: 14px;
     width: 100%;
     margin-top: 15px;
   }
